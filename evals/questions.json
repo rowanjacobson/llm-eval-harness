@@ -1,0 +1,10 @@
+[
+  {
+    "question_id": "q_001",
+    "question": "What is the escalation path for Sev1 incidents?",
+    "gold_answer": "Escalate to the on-call incident commander within 15 minutes.",
+    "source_doc_ids": ["policy_01"],
+    "type": "direct_lookup",
+    "should_abstain": false
+  }
+]

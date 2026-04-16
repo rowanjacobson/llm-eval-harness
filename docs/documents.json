@@ -1,0 +1,12 @@
+[
+  {
+    "doc_id": "policy_01",
+    "title": "Incident Response Policy",
+    "text": "Sev1 incidents must be escalated to the on-call incident commander within 15 minutes."
+  },
+  {
+    "doc_id": "policy_02",
+    "title": "Access Control Policy",
+    "text": "Production data access requires approval from the data platform team and a valid business justification."
+  }
+]
