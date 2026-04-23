@@ -4,7 +4,10 @@ import re
 from typing import Any, Dict, List, Tuple
 
 import anthropic
+from pathlib import Path
+from dotenv import load_dotenv
 
+load_dotenv(Path(__file__).parent.parent / ".env")
 
 DOCS_PATH = "docs/documents.json"
 QUESTIONS_PATH = "evals/questions.json"
@@ -88,9 +91,16 @@ def ask_claude(question: str, context: str) -> str:
     return response.content[0].text
 
 
+RESULTS_PATH = "results.json"
+
 def main() -> None:
     documents = load_json(DOCS_PATH)
     questions = load_json(QUESTIONS_PATH)
+
+    if os.path.exists(RESULTS_PATH):
+        os.remove(RESULTS_PATH)
+
+    results = []
 
     for i, question_obj in enumerate(questions, start=1):
         question = question_obj["question"]
@@ -99,9 +109,19 @@ def main() -> None:
         context = build_context(retrieved_docs)
         answer = ask_claude(question, context)
 
+        results.append({
+            "question_number": i,
+            "question_id": question_obj["question_id"],
+            "question": question,
+            "answer": answer,
+        })
+
         print(f"\n--- Question {i} ({question_obj['question_id']}) ---")
         print(f"Q: {question}")
         print(f"A: {answer}")
+
+    with open(RESULTS_PATH, "w", encoding="utf-8") as f:
+        json.dump(results, f, indent=2)
 
 
 if __name__ == "__main__":
