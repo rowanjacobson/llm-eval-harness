@@ -1,12 +1,22 @@
 [
-  {
-    "doc_id": "policy_01",
-    "title": "Incident Response Policy",
-    "text": "Sev1 incidents must be escalated to the on-call incident commander within 15 minutes."
-  },
-  {
-    "doc_id": "policy_02",
-    "title": "Access Control Policy",
-    "text": "Production data access requires approval from the data platform team and a valid business justification."
-  }
+  {"doc_id":"policy_01","title":"Incident Response Policy","text":"Sev1 incidents must be escalated to the on-call incident commander within 15 minutes. A public incident channel must be opened immediately."},
+  {"doc_id":"policy_02","title":"Access Control Policy","text":"Production data access requires approval from the data platform team and a valid business justification."},
+  {"doc_id":"policy_03","title":"Model Deployment Checklist","text":"Models must pass offline evaluation, safety checks, and rollback testing before deployment."},
+  {"doc_id":"policy_04","title":"Evaluation Ownership","text":"The Model Evaluation team owns benchmark design and recurring test runs."},
+  {"doc_id":"policy_05","title":"On-Call Responsibilities","text":"The incident commander coordinates response and assigns actions during incidents."},
+  {"doc_id":"policy_06","title":"Customer Communication","text":"Customers must be updated within 30 minutes for Sev1 incidents and regularly thereafter."},
+  {"doc_id":"policy_07","title":"Assistant Behaviour","text":"The assistant must only answer from provided documents and must abstain if unsure."},
+  {"doc_id":"policy_08","title":"Data Retention","text":"User data must be deleted after 90 days unless required for compliance."},
+  {"doc_id":"policy_09","title":"Logging Policy","text":"All production systems must log requests and errors for monitoring and debugging."},
+  {"doc_id":"policy_10","title":"Security Review","text":"All new features must undergo a security review before release."},
+  {"doc_id":"policy_11","title":"Deployment Ownership","text":"Every deployment must have a clearly defined owner responsible for rollback decisions."},
+  {"doc_id":"policy_12","title":"Experimentation Policy","text":"A/B tests must define success metrics before launch."},
+  {"doc_id":"policy_13","title":"Latency Targets","text":"User-facing systems must respond within 300ms at p95 latency."},
+  {"doc_id":"policy_14","title":"Model Monitoring","text":"Models must be monitored for drift and performance degradation post-deployment."},
+  {"doc_id":"policy_15","title":"Incident Severity Definitions","text":"Sev1 means total system outage. Sev2 means partial degradation."},
+  {"doc_id":"policy_16","title":"Access Reviews","text":"Access permissions must be reviewed every 30 days."},
+  {"doc_id":"policy_17","title":"Backup Policy","text":"Critical data must be backed up daily and stored in a separate region."},
+  {"doc_id":"policy_18","title":"Feature Rollout","text":"New features should be rolled out gradually using feature flags."},
+  {"doc_id":"policy_19","title":"Compliance Requirements","text":"Systems handling user data must comply with GDPR and related regulations."},
+  {"doc_id":"policy_20","title":"Error Handling","text":"All systems must gracefully handle errors and provide meaningful messages."}
 ]

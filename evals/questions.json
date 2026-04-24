@@ -1,10 +1,26 @@
 [
-  {
-    "question_id": "q_001",
-    "question": "What is the escalation path for Sev1 incidents?",
-    "gold_answer": "Escalate to the on-call incident commander within 15 minutes.",
-    "source_doc_ids": ["policy_01"],
-    "type": "direct_lookup",
-    "should_abstain": false
-  }
+  {"question_id":"q_001","question":"What must happen within 15 minutes during a Sev1 incident?","gold_answer":"Escalation to the on-call incident commander.","source_doc_ids":["policy_01"],"type":"direct_lookup","should_abstain":false},
+  {"question_id":"q_002","question":"Who coordinates incident response?","gold_answer":"The incident commander.","source_doc_ids":["policy_05"],"type":"direct_lookup","should_abstain":false},
+  {"question_id":"q_003","question":"What is required before deploying a model?","gold_answer":"Offline evaluation, safety checks, and rollback testing.","source_doc_ids":["policy_03"],"type":"direct_lookup","should_abstain":false},
+  {"question_id":"q_004","question":"Who owns benchmark design?","gold_answer":"The Model Evaluation team.","source_doc_ids":["policy_04"],"type":"direct_lookup","should_abstain":false},
+  {"question_id":"q_005","question":"When should customers first be updated during a Sev1 incident?","gold_answer":"Within 30 minutes.","source_doc_ids":["policy_06"],"type":"direct_lookup","should_abstain":false},
+
+  {"question_id":"q_006","question":"What defines a Sev1 incident?","gold_answer":"Total system outage.","source_doc_ids":["policy_15"],"type":"direct_lookup","should_abstain":false},
+  {"question_id":"q_007","question":"How often should access permissions be reviewed?","gold_answer":"Every 30 days.","source_doc_ids":["policy_16"],"type":"direct_lookup","should_abstain":false},
+  {"question_id":"q_008","question":"What is required for production data access?","gold_answer":"Approval and a valid business justification.","source_doc_ids":["policy_02"],"type":"direct_lookup","should_abstain":false},
+  {"question_id":"q_009","question":"What is the latency target for user-facing systems?","gold_answer":"300ms at p95.","source_doc_ids":["policy_13"],"type":"direct_lookup","should_abstain":false},
+  {"question_id":"q_010","question":"What must systems do when errors occur?","gold_answer":"Handle errors gracefully and provide meaningful messages.","source_doc_ids":["policy_20"],"type":"direct_lookup","should_abstain":false},
+
+  {"question_id":"q_011","question":"What must be done before releasing new features?","gold_answer":"Security review must be completed.","source_doc_ids":["policy_10"],"type":"direct_lookup","should_abstain":false},
+  {"question_id":"q_012","question":"How should new features be rolled out?","gold_answer":"Gradually using feature flags.","source_doc_ids":["policy_18"],"type":"direct_lookup","should_abstain":false},
+  {"question_id":"q_013","question":"What must be defined before running an A/B test?","gold_answer":"Success metrics.","source_doc_ids":["policy_12"],"type":"direct_lookup","should_abstain":false},
+  {"question_id":"q_014","question":"What should the assistant do if it does not know the answer?","gold_answer":"Abstain and say it does not know.","source_doc_ids":["policy_07"],"type":"direct_lookup","should_abstain":false},
+  {"question_id":"q_015","question":"What must happen to user data after 90 days?","gold_answer":"It must be deleted unless required for compliance.","source_doc_ids":["policy_08"],"type":"direct_lookup","should_abstain":false},
+
+  {"question_id":"q_016","question":"What actions are required during a Sev1 incident?","gold_answer":"Escalate quickly and update customers regularly.","source_doc_ids":["policy_01","policy_06"],"type":"multi_hop","should_abstain":false},
+  {"question_id":"q_017","question":"Who is responsible for rollback decisions and deployments?","gold_answer":"The deployment owner.","source_doc_ids":["policy_11"],"type":"direct_lookup","should_abstain":false},
+  {"question_id":"q_018","question":"What is required for systems handling user data?","gold_answer":"Compliance with GDPR.","source_doc_ids":["policy_19"],"type":"direct_lookup","should_abstain":false},
+
+  {"question_id":"q_019","question":"What is the roadmap for next year's AI models?","gold_answer":"","source_doc_ids":[],"type":"unanswerable","should_abstain":true},
+  {"question_id":"q_020","question":"Who is the CEO of the company?","gold_answer":"","source_doc_ids":[],"type":"unanswerable","should_abstain":true}
 ]
