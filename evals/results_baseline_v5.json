@@ -1,0 +1,1227 @@
+{
+  "summary": {
+    "run_label": "baseline_v5",
+    "num_questions": 20,
+    "numpy": {
+      "retrieval_hit_rate": 1.0,
+      "avg_retrieval_recall": 1.0,
+      "hallucination_rate": 0.0,
+      "avg_citation_score": 0.9
+    },
+    "chroma": {
+      "retrieval_hit_rate": 1.0,
+      "avg_retrieval_recall": 0.972,
+      "hallucination_rate": 0.0,
+      "avg_citation_score": 0.9
+    }
+  },
+  "results": [
+    {
+      "question_number": 1,
+      "question_id": "q_001",
+      "question": "What must happen within 15 minutes during a Sev1 incident?",
+      "gold_doc_ids": [
+        "policy_01"
+      ],
+      "numpy": {
+        "retrieved_doc_ids": [
+          "policy_01",
+          "policy_06",
+          "policy_15"
+        ],
+        "answer": "During a Sev1 incident, the incident must be escalated to the on-call incident commander within 15 minutes. Additionally, a public incident channel must be opened immediately.",
+        "citations": [
+          "policy_01"
+        ],
+        "abstain": false,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": true,
+          "recall": 1.0,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 1.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "The answer is directly supported by policy_01, which states 'Sev1 incidents must be escalated to the on-call incident commander within 15 minutes' and 'A public incident channel must be opened immediately.' Both claims in the answer are explicitly stated in the provided context."
+        }
+      },
+      "chroma": {
+        "retrieved_doc_ids": [
+          "policy_01",
+          "policy_06",
+          "policy_15"
+        ],
+        "answer": "During a Sev1 incident, the incident must be escalated to the on-call incident commander within 15 minutes. Additionally, a public incident channel must be opened immediately.",
+        "citations": [
+          "policy_01"
+        ],
+        "abstain": false,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": true,
+          "recall": 1.0,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 1.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "The answer is directly supported by policy_01, which states 'Sev1 incidents must be escalated to the on-call incident commander within 15 minutes. A public incident channel must be opened immediately.' The answer accurately reflects both requirements mentioned in the policy."
+        }
+      }
+    },
+    {
+      "question_number": 2,
+      "question_id": "q_002",
+      "question": "Who coordinates incident response?",
+      "gold_doc_ids": [
+        "policy_05"
+      ],
+      "numpy": {
+        "retrieved_doc_ids": [
+          "policy_05",
+          "policy_01",
+          "policy_15"
+        ],
+        "answer": "The incident commander coordinates response and assigns actions during incidents.",
+        "citations": [
+          "policy_05"
+        ],
+        "abstain": false,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": true,
+          "recall": 1.0,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 1.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "The answer is directly quoted from policy_05, which explicitly states that 'The incident commander coordinates response and assigns actions during incidents.'"
+        }
+      },
+      "chroma": {
+        "retrieved_doc_ids": [
+          "policy_05",
+          "policy_01",
+          "policy_15"
+        ],
+        "answer": "The incident commander coordinates response and assigns actions during incidents.",
+        "citations": [
+          "policy_05"
+        ],
+        "abstain": false,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": true,
+          "recall": 1.0,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 1.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "The answer is directly supported by document policy_05, which states 'The incident commander coordinates response and assigns actions during incidents.'"
+        }
+      }
+    },
+    {
+      "question_number": 3,
+      "question_id": "q_003",
+      "question": "What is required before deploying a model?",
+      "gold_doc_ids": [
+        "policy_03"
+      ],
+      "numpy": {
+        "retrieved_doc_ids": [
+          "policy_03",
+          "policy_14",
+          "policy_11"
+        ],
+        "answer": "Before deploying a model, it must pass three requirements: (1) offline evaluation, (2) safety checks, and (3) rollback testing. Additionally, every deployment must have a clearly defined owner responsible for rollback decisions.",
+        "citations": [
+          "policy_03",
+          "policy_11"
+        ],
+        "abstain": false,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": true,
+          "recall": 1.0,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 1.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "The answer is fully supported by the provided documents. The three requirements (offline evaluation, safety checks, and rollback testing) are explicitly stated in policy_03. The requirement for a clearly defined deployment owner is explicitly stated in policy_11."
+        }
+      },
+      "chroma": {
+        "retrieved_doc_ids": [
+          "policy_03",
+          "policy_14",
+          "policy_11"
+        ],
+        "answer": "Before deploying a model, it must pass three key requirements: (1) offline evaluation, (2) safety checks, and (3) rollback testing. Additionally, every deployment must have a clearly defined owner responsible for rollback decisions.",
+        "citations": [
+          "policy_03",
+          "policy_11"
+        ],
+        "abstain": false,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": true,
+          "recall": 1.0,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 1.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "The answer is directly supported by the context. The first requirement (offline evaluation, safety checks, and rollback testing) comes from policy_03, and the second requirement (clearly defined owner for rollback decisions) comes from policy_11."
+        }
+      }
+    },
+    {
+      "question_number": 4,
+      "question_id": "q_004",
+      "question": "Who owns benchmark design?",
+      "gold_doc_ids": [
+        "policy_04"
+      ],
+      "numpy": {
+        "retrieved_doc_ids": [
+          "policy_04",
+          "policy_11",
+          "policy_12"
+        ],
+        "answer": "The Model Evaluation team owns benchmark design and recurring test runs.",
+        "citations": [
+          "policy_04"
+        ],
+        "abstain": false,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": true,
+          "recall": 1.0,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 1.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "The answer is directly supported by document policy_04, which states 'The Model Evaluation team owns benchmark design and recurring test runs.'"
+        }
+      },
+      "chroma": {
+        "retrieved_doc_ids": [
+          "policy_04",
+          "policy_11",
+          "policy_12"
+        ],
+        "answer": "The Model Evaluation team owns benchmark design and recurring test runs.",
+        "citations": [
+          "policy_04"
+        ],
+        "abstain": false,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": true,
+          "recall": 1.0,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 1.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "The answer is directly supported by document policy_04, which explicitly states 'The Model Evaluation team owns benchmark design and recurring test runs.'"
+        }
+      }
+    },
+    {
+      "question_number": 5,
+      "question_id": "q_005",
+      "question": "When should customers first be updated during a Sev1 incident?",
+      "gold_doc_ids": [
+        "policy_06"
+      ],
+      "numpy": {
+        "retrieved_doc_ids": [
+          "policy_06",
+          "policy_01",
+          "policy_15"
+        ],
+        "answer": "Customers must be updated within 30 minutes of a Sev1 incident, and regularly thereafter.",
+        "citations": [
+          "policy_06"
+        ],
+        "abstain": false,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": true,
+          "recall": 1.0,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 1.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "The answer is directly supported by document policy_06, which states 'Customers must be updated within 30 minutes for Sev1 incidents and regularly thereafter.' This matches the answer provided."
+        }
+      },
+      "chroma": {
+        "retrieved_doc_ids": [
+          "policy_06",
+          "policy_01",
+          "policy_15"
+        ],
+        "answer": "Customers must be updated within 30 minutes for Sev1 incidents.",
+        "citations": [
+          "policy_06"
+        ],
+        "abstain": false,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": true,
+          "recall": 1.0,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 1.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "The answer is directly quoted from policy_06 (Customer Communication), which explicitly states 'Customers must be updated within 30 minutes for Sev1 incidents and regularly thereafter.'"
+        }
+      }
+    },
+    {
+      "question_number": 6,
+      "question_id": "q_006",
+      "question": "What defines a Sev1 incident?",
+      "gold_doc_ids": [
+        "policy_15"
+      ],
+      "numpy": {
+        "retrieved_doc_ids": [
+          "policy_15",
+          "policy_01",
+          "policy_06"
+        ],
+        "answer": "A Sev1 incident is defined as a total system outage.",
+        "citations": [
+          "policy_15"
+        ],
+        "abstain": false,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": true,
+          "recall": 1.0,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 1.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "The answer is directly supported by document policy_15, which explicitly states 'Sev1 means total system outage.'"
+        }
+      },
+      "chroma": {
+        "retrieved_doc_ids": [
+          "policy_15",
+          "policy_01",
+          "policy_06"
+        ],
+        "answer": "A Sev1 incident is defined as a total system outage.",
+        "citations": [
+          "policy_15"
+        ],
+        "abstain": false,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": true,
+          "recall": 1.0,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 1.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "The answer is directly supported by policy_15, which explicitly states 'Sev1 means total system outage.'"
+        }
+      }
+    },
+    {
+      "question_number": 7,
+      "question_id": "q_007",
+      "question": "How often should access permissions be reviewed?",
+      "gold_doc_ids": [
+        "policy_16"
+      ],
+      "numpy": {
+        "retrieved_doc_ids": [
+          "policy_16",
+          "policy_10",
+          "policy_02"
+        ],
+        "answer": "Access permissions must be reviewed every 30 days.",
+        "citations": [
+          "policy_16"
+        ],
+        "abstain": false,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": true,
+          "recall": 1.0,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 1.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "The answer is directly supported by document policy_16, which states 'Access permissions must be reviewed every 30 days.'"
+        }
+      },
+      "chroma": {
+        "retrieved_doc_ids": [
+          "policy_16",
+          "policy_10",
+          "policy_02"
+        ],
+        "answer": "Access permissions must be reviewed every 30 days.",
+        "citations": [
+          "policy_16"
+        ],
+        "abstain": false,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": true,
+          "recall": 1.0,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 1.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "The answer is directly supported by policy_16 which explicitly states 'Access permissions must be reviewed every 30 days.'"
+        }
+      }
+    },
+    {
+      "question_number": 8,
+      "question_id": "q_008",
+      "question": "What is required for production data access?",
+      "gold_doc_ids": [
+        "policy_02"
+      ],
+      "numpy": {
+        "retrieved_doc_ids": [
+          "policy_02",
+          "policy_19",
+          "policy_09"
+        ],
+        "answer": "Production data access requires two things: (1) approval from the data platform team, and (2) a valid business justification.",
+        "citations": [
+          "policy_02"
+        ],
+        "abstain": false,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": true,
+          "recall": 1.0,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 1.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "The answer directly matches the information in policy_02, which states that 'Production data access requires approval from the data platform team and a valid business justification.' Both required elements are accurately stated."
+        }
+      },
+      "chroma": {
+        "retrieved_doc_ids": [
+          "policy_02",
+          "policy_19",
+          "policy_09"
+        ],
+        "answer": "Production data access requires two things: (1) approval from the data platform team, and (2) a valid business justification.",
+        "citations": [
+          "policy_02"
+        ],
+        "abstain": false,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": true,
+          "recall": 1.0,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 1.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "The answer is directly supported by policy_02, which states that 'Production data access requires approval from the data platform team and a valid business justification.' The answer accurately reflects both requirements mentioned in the source document."
+        }
+      }
+    },
+    {
+      "question_number": 9,
+      "question_id": "q_009",
+      "question": "What is the latency target for user-facing systems?",
+      "gold_doc_ids": [
+        "policy_13"
+      ],
+      "numpy": {
+        "retrieved_doc_ids": [
+          "policy_13",
+          "policy_14",
+          "policy_20"
+        ],
+        "answer": "User-facing systems must respond within 300ms at p95 latency.",
+        "citations": [
+          "policy_13"
+        ],
+        "abstain": false,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": true,
+          "recall": 1.0,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 1.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "The answer is directly stated in document policy_13 (Latency Targets), which specifies that 'User-facing systems must respond within 300ms at p95 latency.' The answer matches the source material exactly."
+        }
+      },
+      "chroma": {
+        "retrieved_doc_ids": [
+          "policy_13",
+          "policy_20",
+          "policy_14"
+        ],
+        "answer": "User-facing systems must respond within 300ms at p95 latency.",
+        "citations": [
+          "policy_13"
+        ],
+        "abstain": false,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": true,
+          "recall": 1.0,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 1.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "The answer is directly quoted from policy_13 which explicitly states the latency target for user-facing systems as 300ms at p95 latency."
+        }
+      }
+    },
+    {
+      "question_number": 10,
+      "question_id": "q_010",
+      "question": "What must systems do when errors occur?",
+      "gold_doc_ids": [
+        "policy_20"
+      ],
+      "numpy": {
+        "retrieved_doc_ids": [
+          "policy_20",
+          "policy_09",
+          "policy_19"
+        ],
+        "answer": "When errors occur, systems must: (1) gracefully handle errors and provide meaningful messages (per the Error Handling policy), and (2) log errors for monitoring and debugging purposes (per the Logging Policy).",
+        "citations": [
+          "policy_20",
+          "policy_09"
+        ],
+        "abstain": false,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": true,
+          "recall": 1.0,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 1.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "Both claims in the answer are directly supported by the provided documents. The Error Handling policy (policy_20) states systems must 'gracefully handle errors and provide meaningful messages,' and the Logging Policy (policy_09) states systems must 'log requests and errors for monitoring and debugging.'"
+        }
+      },
+      "chroma": {
+        "retrieved_doc_ids": [
+          "policy_20",
+          "policy_09",
+          "policy_19"
+        ],
+        "answer": "When errors occur, systems must: (1) gracefully handle errors and provide meaningful messages (per the Error Handling policy), and (2) log errors for monitoring and debugging (per the Logging Policy).",
+        "citations": [
+          "policy_20",
+          "policy_09"
+        ],
+        "abstain": false,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": true,
+          "recall": 1.0,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 1.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "The answer is directly supported by the provided documents. The Error Handling policy (policy_20) states that 'All systems must gracefully handle errors and provide meaningful messages,' and the Logging Policy (policy_09) states that 'All production systems must log requests and errors for monitoring and debugging.' Both claims in the answer are explicitly grounded in the context."
+        }
+      }
+    },
+    {
+      "question_number": 11,
+      "question_id": "q_011",
+      "question": "What must be done before releasing new features?",
+      "gold_doc_ids": [
+        "policy_10"
+      ],
+      "numpy": {
+        "retrieved_doc_ids": [
+          "policy_18",
+          "policy_10",
+          "policy_03"
+        ],
+        "answer": "Before releasing new features, two key requirements must be met: (1) all new features must undergo a security review (policy_10), and (2) new features should be rolled out gradually using feature flags (policy_18).",
+        "citations": [
+          "policy_10",
+          "policy_18"
+        ],
+        "abstain": false,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": true,
+          "recall": 1.0,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 1.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "The answer directly references and accurately summarizes information from policy_10 (security review requirement) and policy_18 (gradual rollout using feature flags), both of which address what must be done before releasing new features."
+        }
+      },
+      "chroma": {
+        "retrieved_doc_ids": [
+          "policy_18",
+          "policy_10",
+          "policy_03"
+        ],
+        "answer": "Before releasing new features, two key requirements must be met: (1) All new features must undergo a **security review** before release, and (2) new features should be rolled out gradually using **feature flags**. Additionally, if the feature involves a model deployment, it must also pass **offline evaluation, safety checks, and rollback testing** before deployment.",
+        "citations": [
+          "policy_10",
+          "policy_18",
+          "policy_03"
+        ],
+        "abstain": false,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": true,
+          "recall": 1.0,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 1.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "The answer is directly supported by the provided documents. It accurately cites policy_10 (security review requirement), policy_18 (gradual rollout with feature flags), and policy_03 (offline evaluation, safety checks, and rollback testing for model deployment). All statements in the answer are grounded in the context."
+        }
+      }
+    },
+    {
+      "question_number": 12,
+      "question_id": "q_012",
+      "question": "How should new features be rolled out?",
+      "gold_doc_ids": [
+        "policy_18"
+      ],
+      "numpy": {
+        "retrieved_doc_ids": [
+          "policy_18",
+          "policy_10",
+          "policy_03"
+        ],
+        "answer": "New features should be rolled out gradually using feature flags. Additionally, all new features must undergo a security review before release.",
+        "citations": [
+          "policy_18",
+          "policy_10"
+        ],
+        "abstain": false,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": true,
+          "recall": 1.0,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 1.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "Both statements in the answer are directly supported by the provided documents. The first statement about rolling out features gradually using feature flags comes from policy_18, and the second statement about security review before release comes from policy_10."
+        }
+      },
+      "chroma": {
+        "retrieved_doc_ids": [
+          "policy_18",
+          "policy_10",
+          "policy_03"
+        ],
+        "answer": "New features should be rolled out gradually using feature flags.",
+        "citations": [
+          "policy_18"
+        ],
+        "abstain": false,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": true,
+          "recall": 1.0,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 1.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "The answer is directly supported by policy_18, which states 'New features should be rolled out gradually using feature flags.'"
+        }
+      }
+    },
+    {
+      "question_number": 13,
+      "question_id": "q_013",
+      "question": "What must be defined before running an A/B test?",
+      "gold_doc_ids": [
+        "policy_12"
+      ],
+      "numpy": {
+        "retrieved_doc_ids": [
+          "policy_12",
+          "policy_04",
+          "policy_03"
+        ],
+        "answer": "Success metrics must be defined before running an A/B test.",
+        "citations": [
+          "policy_12"
+        ],
+        "abstain": false,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": true,
+          "recall": 1.0,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 1.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "The answer is directly supported by policy_12, which states 'A/B tests must define success metrics before launch.'"
+        }
+      },
+      "chroma": {
+        "retrieved_doc_ids": [
+          "policy_12",
+          "policy_04",
+          "policy_03"
+        ],
+        "answer": "Success metrics must be defined before running an A/B test.",
+        "citations": [
+          "policy_12"
+        ],
+        "abstain": false,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": true,
+          "recall": 1.0,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 1.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "The answer is directly supported by the Experimentation Policy document, which states 'A/B tests must define success metrics before launch.'"
+        }
+      }
+    },
+    {
+      "question_number": 14,
+      "question_id": "q_014",
+      "question": "What should the assistant do if it does not know the answer?",
+      "gold_doc_ids": [
+        "policy_07"
+      ],
+      "numpy": {
+        "retrieved_doc_ids": [
+          "policy_07",
+          "policy_20",
+          "policy_05"
+        ],
+        "answer": "If the assistant does not know the answer, it must abstain.",
+        "citations": [
+          "policy_07"
+        ],
+        "abstain": false,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": true,
+          "recall": 1.0,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 1.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "The answer is directly supported by policy_07, which states 'The assistant must only answer from provided documents and must abstain if unsure.' This explicitly requires the assistant to abstain when uncertain about an answer."
+        }
+      },
+      "chroma": {
+        "retrieved_doc_ids": [
+          "policy_07",
+          "policy_05",
+          "policy_20"
+        ],
+        "answer": "If the assistant does not know the answer, it must abstain.",
+        "citations": [
+          "policy_07"
+        ],
+        "abstain": false,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": true,
+          "recall": 1.0,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 1.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "The answer is directly supported by policy_07, which states 'The assistant must only answer from provided documents and must abstain if unsure.'"
+        }
+      }
+    },
+    {
+      "question_number": 15,
+      "question_id": "q_015",
+      "question": "What must happen to user data after 90 days?",
+      "gold_doc_ids": [
+        "policy_08"
+      ],
+      "numpy": {
+        "retrieved_doc_ids": [
+          "policy_08",
+          "policy_19",
+          "policy_17"
+        ],
+        "answer": "User data must be deleted after 90 days unless it is required for compliance purposes.",
+        "citations": [
+          "policy_08"
+        ],
+        "abstain": false,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": true,
+          "recall": 1.0,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 1.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "The answer is directly supported by policy_08, which states 'User data must be deleted after 90 days unless required for compliance.'"
+        }
+      },
+      "chroma": {
+        "retrieved_doc_ids": [
+          "policy_08",
+          "policy_17",
+          "policy_19"
+        ],
+        "answer": "User data must be deleted after 90 days, unless it is required for compliance purposes.",
+        "citations": [
+          "policy_08"
+        ],
+        "abstain": false,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": true,
+          "recall": 1.0,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 1.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "The answer is directly supported by policy_08, which states 'User data must be deleted after 90 days unless required for compliance.' The answer accurately reflects this requirement and its exception."
+        }
+      }
+    },
+    {
+      "question_number": 16,
+      "question_id": "q_016",
+      "question": "What actions are required during a Sev1 incident?",
+      "gold_doc_ids": [
+        "policy_01",
+        "policy_06"
+      ],
+      "numpy": {
+        "retrieved_doc_ids": [
+          "policy_01",
+          "policy_15",
+          "policy_06"
+        ],
+        "answer": "During a Sev1 incident (defined as a total system outage), the following actions are required: (1) Escalate to the on-call incident commander within 15 minutes, (2) Open a public incident channel immediately, and (3) Update customers within 30 minutes of the incident and regularly thereafter.",
+        "citations": [
+          "policy_01",
+          "policy_15",
+          "policy_06"
+        ],
+        "abstain": false,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": true,
+          "recall": 1.0,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 1.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "All three actions in the answer are directly supported by the provided documents. The definition of Sev1 comes from policy_15, the escalation and channel requirements come from policy_01, and the customer communication timeline comes from policy_06."
+        }
+      },
+      "chroma": {
+        "retrieved_doc_ids": [
+          "policy_01",
+          "policy_15",
+          "policy_05"
+        ],
+        "answer": "During a Sev1 incident (defined as a total system outage), two immediate actions are required: (1) escalate to the on-call incident commander within 15 minutes, and (2) open a public incident channel immediately. The incident commander then coordinates the response and assigns actions.",
+        "citations": [
+          "policy_01",
+          "policy_15",
+          "policy_05"
+        ],
+        "abstain": false,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": true,
+          "recall": 0.5,
+          "missed_docs": [
+            "policy_06"
+          ]
+        },
+        "citation_eval": {
+          "citation_score": 1.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "The answer is fully supported by the provided documents. It correctly identifies Sev1 as a total system outage (policy_15), states the two required actions (escalate within 15 minutes and open a public channel immediately from policy_01), and explains the incident commander's role in coordinating response and assigning actions (policy_05)."
+        }
+      }
+    },
+    {
+      "question_number": 17,
+      "question_id": "q_017",
+      "question": "Who is responsible for rollback decisions and deployments?",
+      "gold_doc_ids": [
+        "policy_11"
+      ],
+      "numpy": {
+        "retrieved_doc_ids": [
+          "policy_11",
+          "policy_03",
+          "policy_05"
+        ],
+        "answer": "According to the policies, every deployment must have a clearly defined owner who is responsible for rollback decisions (policy_11). Additionally, models must pass rollback testing before deployment as part of the Model Deployment Checklist (policy_03). During incidents, the incident commander coordinates response and assigns actions, which may include rollback-related decisions (policy_05).",
+        "citations": [
+          "policy_11",
+          "policy_03",
+          "policy_05"
+        ],
+        "abstain": false,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": true,
+          "recall": 1.0,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 1.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "The answer directly cites policy_11 which states that every deployment must have a clearly defined owner responsible for rollback decisions. It also appropriately references policy_03 regarding rollback testing requirements and policy_05 regarding the incident commander's role. All claims are supported by the provided documents."
+        }
+      },
+      "chroma": {
+        "retrieved_doc_ids": [
+          "policy_11",
+          "policy_03",
+          "policy_05"
+        ],
+        "answer": "According to the policies, every deployment must have a clearly defined owner who is responsible for rollback decisions (Deployment Ownership policy). Additionally, models must pass rollback testing before deployment as part of the Model Deployment Checklist. During incidents, the incident commander coordinates the response and assigns actions, which would include rollback-related decisions.",
+        "citations": [
+          "policy_11",
+          "policy_03",
+          "policy_05"
+        ],
+        "abstain": false,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": true,
+          "recall": 1.0,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 1.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "The answer accurately cites the Deployment Ownership policy (policy_11) which states that every deployment must have a clearly defined owner responsible for rollback decisions. It also correctly references the Model Deployment Checklist (policy_03) regarding rollback testing, and the On-Call Responsibilities (policy_05) about incident commanders. All claims are supported by the provided context documents."
+        }
+      }
+    },
+    {
+      "question_number": 18,
+      "question_id": "q_018",
+      "question": "What is required for systems handling user data?",
+      "gold_doc_ids": [
+        "policy_19"
+      ],
+      "numpy": {
+        "retrieved_doc_ids": [
+          "policy_19",
+          "policy_20",
+          "policy_02"
+        ],
+        "answer": "Systems handling user data must comply with GDPR and related regulations.",
+        "citations": [
+          "policy_19"
+        ],
+        "abstain": false,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": true,
+          "recall": 1.0,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 1.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "The answer is directly supported by document policy_19, which explicitly states that 'Systems handling user data must comply with GDPR and related regulations.'"
+        }
+      },
+      "chroma": {
+        "retrieved_doc_ids": [
+          "policy_19",
+          "policy_20",
+          "policy_02"
+        ],
+        "answer": "Systems handling user data must comply with GDPR and related regulations.",
+        "citations": [
+          "policy_19"
+        ],
+        "abstain": false,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": true,
+          "recall": 1.0,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 1.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "The answer is directly supported by document policy_19, which states 'Systems handling user data must comply with GDPR and related regulations.'"
+        }
+      }
+    },
+    {
+      "question_number": 19,
+      "question_id": "q_019",
+      "question": "What is the roadmap for next year's AI models?",
+      "gold_doc_ids": [],
+      "numpy": {
+        "retrieved_doc_ids": [
+          "policy_04",
+          "policy_14",
+          "policy_03"
+        ],
+        "answer": "The provided documents do not contain any information about a roadmap for next year's AI models.",
+        "citations": [],
+        "abstain": true,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": null,
+          "recall": null,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 0.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "The answer correctly states that the provided documents do not contain information about a roadmap for next year's AI models. The documents only discuss evaluation ownership, model monitoring, and deployment checklists, none of which address future roadmaps."
+        }
+      },
+      "chroma": {
+        "retrieved_doc_ids": [
+          "policy_04",
+          "policy_14",
+          "policy_03"
+        ],
+        "answer": "The provided documents do not contain any information about a roadmap for next year's AI models.",
+        "citations": [],
+        "abstain": true,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": null,
+          "recall": null,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 0.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "The answer correctly identifies that the provided documents do not contain information about a roadmap for next year's AI models. The documents only discuss evaluation ownership, model monitoring, and deployment checklists. The answer accurately reflects what is absent from the context."
+        }
+      }
+    },
+    {
+      "question_number": 20,
+      "question_id": "q_020",
+      "question": "Who is the CEO of the company?",
+      "gold_doc_ids": [],
+      "numpy": {
+        "retrieved_doc_ids": [
+          "policy_11",
+          "policy_04",
+          "policy_05"
+        ],
+        "answer": "The provided documents do not contain any information about the CEO of the company.",
+        "citations": [],
+        "abstain": true,
+        "uncertainty": "high",
+        "retrieval_eval": {
+          "hit": null,
+          "recall": null,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 0.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "The answer correctly states that the provided documents do not contain information about the CEO. The documents only discuss deployment ownership, model evaluation team responsibilities, and on-call incident response procedures. The answer is grounded in the context by accurately reflecting what is (and is not) present in the documents."
+        }
+      },
+      "chroma": {
+        "retrieved_doc_ids": [
+          "policy_04",
+          "policy_11",
+          "policy_05"
+        ],
+        "answer": "The provided documents do not contain any information about the company's CEO.",
+        "citations": [],
+        "abstain": true,
+        "uncertainty": "low",
+        "retrieval_eval": {
+          "hit": null,
+          "recall": null,
+          "missed_docs": []
+        },
+        "citation_eval": {
+          "citation_score": 0.0,
+          "hallucinated_citations": []
+        },
+        "grounding_eval": {
+          "grounded": true,
+          "reason": "The answer correctly states that the provided documents do not contain information about the company's CEO. This is an accurate assessment of the context, which only contains policies about evaluation ownership, deployment ownership, and on-call responsibilities."
+        }
+      }
+    }
+  ]
+}
