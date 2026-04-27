@@ -1,0 +1,122 @@
+[
+  {
+    "question_number": 1,
+    "question_id": "q_001",
+    "question": "What must happen within 15 minutes during a Sev1 incident?",
+    "answer": "```json\n{\n  \"answer\": \"During a Sev1 incident, the incident must be escalated to the on-call incident commander within 15 minutes. Additionally, a public incident channel must be opened immediately.\",\n  \"citations\": [\"policy_01\"],\n  \"abstain\": false,\n  \"uncertainty\": \"low\"\n}\n```"
+  },
+  {
+    "question_number": 2,
+    "question_id": "q_002",
+    "question": "Who coordinates incident response?",
+    "answer": "```json\n{\n  \"answer\": \"The incident commander coordinates response and assigns actions during incidents.\",\n  \"citations\": [\"policy_05\"],\n  \"abstain\": false,\n  \"uncertainty\": \"low\"\n}\n```"
+  },
+  {
+    "question_number": 3,
+    "question_id": "q_003",
+    "question": "What is required before deploying a model?",
+    "answer": "```json\n{\n  \"answer\": \"Before deploying a model, it must pass three requirements: (1) offline evaluation, (2) safety checks, and (3) rollback testing.\",\n  \"citations\": [\"policy_03\"],\n  \"abstain\": false,\n  \"uncertainty\": \"low\"\n}\n```"
+  },
+  {
+    "question_number": 4,
+    "question_id": "q_004",
+    "question": "Who owns benchmark design?",
+    "answer": "```json\n{\n  \"answer\": \"The Model Evaluation team owns benchmark design and recurring test runs.\",\n  \"citations\": [\"policy_04\"],\n  \"abstain\": false,\n  \"uncertainty\": \"low\"\n}\n```"
+  },
+  {
+    "question_number": 5,
+    "question_id": "q_005",
+    "question": "When should customers first be updated during a Sev1 incident?",
+    "answer": "```json\n{\n  \"answer\": \"Customers must be updated within 30 minutes of a Sev1 incident, and regularly thereafter.\",\n  \"citations\": [\"policy_06\"],\n  \"abstain\": false,\n  \"uncertainty\": \"low\"\n}\n```"
+  },
+  {
+    "question_number": 6,
+    "question_id": "q_006",
+    "question": "What defines a Sev1 incident?",
+    "answer": "```json\n{\n  \"answer\": \"A Sev1 incident is defined as a total system outage.\",\n  \"citations\": [\"policy_15\"],\n  \"abstain\": false,\n  \"uncertainty\": \"low\"\n}\n```"
+  },
+  {
+    "question_number": 7,
+    "question_id": "q_007",
+    "question": "How often should access permissions be reviewed?",
+    "answer": "```json\n{\n  \"answer\": \"Access permissions must be reviewed every 30 days.\",\n  \"citations\": [\"policy_16\"],\n  \"abstain\": false,\n  \"uncertainty\": \"low\"\n}\n```"
+  },
+  {
+    "question_number": 8,
+    "question_id": "q_008",
+    "question": "What is required for production data access?",
+    "answer": "```json\n{\n  \"answer\": \"Production data access requires two things: (1) approval from the data platform team, and (2) a valid business justification.\",\n  \"citations\": [\"policy_02\"],\n  \"abstain\": false,\n  \"uncertainty\": \"low\"\n}\n```"
+  },
+  {
+    "question_number": 9,
+    "question_id": "q_009",
+    "question": "What is the latency target for user-facing systems?",
+    "answer": "```json\n{\n  \"answer\": \"User-facing systems must respond within 300ms at p95 latency.\",\n  \"citations\": [\"policy_13\"],\n  \"abstain\": false,\n  \"uncertainty\": \"low\"\n}\n```"
+  },
+  {
+    "question_number": 10,
+    "question_id": "q_010",
+    "question": "What must systems do when errors occur?",
+    "answer": "```json\n{\n  \"answer\": \"When errors occur, systems must: (1) gracefully handle errors and provide meaningful messages (per the Error Handling policy), and (2) log errors for monitoring and debugging purposes (per the Logging Policy).\",\n  \"citations\": [\"policy_20\", \"policy_09\"],\n  \"abstain\": false,\n  \"uncertainty\": \"low\"\n}\n```"
+  },
+  {
+    "question_number": 11,
+    "question_id": "q_011",
+    "question": "What must be done before releasing new features?",
+    "answer": "```json\n{\n  \"answer\": \"Before releasing new features, two key requirements must be met: (1) all new features must undergo a security review (per the Security Review policy), and (2) new features should be rolled out gradually using feature flags (per the Feature Rollout policy).\",\n  \"citations\": [\"policy_10\", \"policy_18\"],\n  \"abstain\": false,\n  \"uncertainty\": \"low\"\n}\n```"
+  },
+  {
+    "question_number": 12,
+    "question_id": "q_012",
+    "question": "How should new features be rolled out?",
+    "answer": "```json\n{\n  \"answer\": \"New features should be rolled out gradually using feature flags. Additionally, all new features must undergo a security review before release.\",\n  \"citations\": [\"policy_18\", \"policy_10\"],\n  \"abstain\": false,\n  \"uncertainty\": \"low\"\n}\n```"
+  },
+  {
+    "question_number": 13,
+    "question_id": "q_013",
+    "question": "What must be defined before running an A/B test?",
+    "answer": "```json\n{\n  \"answer\": \"Success metrics must be defined before running an A/B test.\",\n  \"citations\": [\"policy_12\"],\n  \"abstain\": false,\n  \"uncertainty\": \"low\"\n}\n```"
+  },
+  {
+    "question_number": 14,
+    "question_id": "q_014",
+    "question": "What should the assistant do if it does not know the answer?",
+    "answer": "```json\n{\n  \"answer\": \"The assistant must abstain if unsure.\",\n  \"citations\": [\"policy_07\"],\n  \"abstain\": false,\n  \"uncertainty\": \"low\"\n}\n```"
+  },
+  {
+    "question_number": 15,
+    "question_id": "q_015",
+    "question": "What must happen to user data after 90 days?",
+    "answer": "```json\n{\n  \"answer\": \"User data must be deleted after 90 days unless it is required for compliance purposes.\",\n  \"citations\": [\"policy_08\"],\n  \"abstain\": false,\n  \"uncertainty\": \"low\"\n}\n```"
+  },
+  {
+    "question_number": 16,
+    "question_id": "q_016",
+    "question": "What actions are required during a Sev1 incident?",
+    "answer": "```json\n{\n  \"answer\": \"During a Sev1 incident (defined as a total system outage), the following actions are required: (1) Escalate to the on-call incident commander within 15 minutes, (2) Open a public incident channel immediately, and (3) Update customers within 30 minutes and regularly thereafter.\",\n  \"citations\": [\"policy_01\", \"policy_15\", \"policy_06\"],\n  \"abstain\": false,\n  \"uncertainty\": \"low\"\n}\n```"
+  },
+  {
+    "question_number": 17,
+    "question_id": "q_017",
+    "question": "Who is responsible for rollback decisions and deployments?",
+    "answer": "```json\n{\n  \"answer\": \"According to the policies, every deployment must have a clearly defined owner who is responsible for rollback decisions (policy_11). Additionally, models must pass rollback testing before deployment (policy_03), and during incidents, the incident commander coordinates response and assigns actions, which would include rollback-related decisions (policy_05).\",\n  \"citations\": [\"policy_11\", \"policy_03\", \"policy_05\"],\n  \"abstain\": false,\n  \"uncertainty\": \"low\"\n}\n```"
+  },
+  {
+    "question_number": 18,
+    "question_id": "q_018",
+    "question": "What is required for systems handling user data?",
+    "answer": "```json\n{\n  \"answer\": \"Systems handling user data must comply with GDPR and related regulations.\",\n  \"citations\": [\"policy_19\"],\n  \"abstain\": false,\n  \"uncertainty\": \"low\"\n}\n```"
+  },
+  {
+    "question_number": 19,
+    "question_id": "q_019",
+    "question": "What is the roadmap for next year's AI models?",
+    "answer": "```json\n{\n  \"answer\": \"The provided documents do not contain any information about a roadmap for next year's AI models.\",\n  \"citations\": [],\n  \"abstain\": true,\n  \"uncertainty\": \"low\"\n}\n```"
+  },
+  {
+    "question_number": 20,
+    "question_id": "q_020",
+    "question": "Who is the CEO of the company?",
+    "answer": "```json\n{\n  \"answer\": \"The provided documents do not contain any information about the CEO of the company.\",\n  \"citations\": [],\n  \"abstain\": true,\n  \"uncertainty\": \"high\"\n}\n```"
+  }
+]
